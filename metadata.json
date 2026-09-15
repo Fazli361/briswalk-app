@@ -1,0 +1,8 @@
+{
+  "name": "Sistem Pendaftaran Peserta BRIS WALK",
+  "description": "Sistem pendaftaran peserta BRIS WALK untuk individu dan keluarga dengan integrasi Google Sheets & Google Apps Script.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

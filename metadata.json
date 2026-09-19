@@ -1,6 +1,0 @@
-{
-  "name": "Borang Pendaftaran Program Briskwalk",
-  "description": "Borang pendaftaran peserta Program Briskwalk Panel Penasihat Klinik Kesihatan dengan integrasi Google Sheets.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}

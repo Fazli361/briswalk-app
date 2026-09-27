@@ -1,0 +1,146 @@
+import React from 'react';
+
+interface KlinikLogoProps {
+  className?: string;
+  size?: 'sm' | 'md' | 'lg' | 'xl';
+}
+
+export const KlinikLogo: React.FC<KlinikLogoProps> = ({
+  className = 'w-full h-full',
+  size = 'md',
+}) => {
+  const sizeClasses = {
+    sm: 'w-10 h-10',
+    md: 'w-14 h-14',
+    lg: 'w-20 h-20',
+    xl: 'w-28 h-28',
+  };
+
+  return (
+    <div className={`relative shrink-0 flex items-center justify-center ${className || sizeClasses[size]}`}>
+      <svg
+        viewBox="0 0 500 580"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-full h-full object-contain drop-shadow-xs"
+        aria-label="Logo Panel Penasihat Klinik Kesihatan Changkat Jering"
+      >
+        {/* Outer Blue Loop Swoop */}
+        <path
+          d="M 180 540 C 130 460 65 370 25 250 C -10 145 42 40 150 10 C 168 6 182 3 192 1 C 158 30 115 105 110 180 C 105 270 170 380 230 450 C 265 490 280 515 285 540 C 265 545 220 540 180 540 Z"
+          fill="#1e358b"
+        />
+
+        {/* Blue Swoop Left Bottom Pinpoint */}
+        <path
+          d="M 192 1 C 128 16 50 82 18 182 C -12 282 28 397 105 482 L 192 568 C 162 503 112 423 82 323 C 55 233 82 143 147 73 C 167 51 187 33 202 21 Z"
+          fill="#1e358b"
+        />
+
+        {/* Red Middle Swoop Curves forming the heart/crescent */}
+        <path
+          d="M 175 18 C 210 5 245 0 270 0 C 220 15 160 65 130 120 C 95 180 90 260 135 325 C 170 375 240 395 310 375 C 340 365 365 345 380 325 C 330 365 240 375 175 330 C 120 290 105 210 125 140 C 140 90 175 45 215 15 Z"
+          fill="#d60000"
+        />
+        <path
+          d="M 175 18 C 110 65 75 145 75 225 C 75 315 140 385 225 385 C 275 385 320 360 345 340 C 290 370 215 370 160 330 C 115 295 95 240 100 185 C 108 125 145 65 195 25 Z"
+          fill="#d60000"
+        />
+
+        {/* Yellow Right Crescent Accent */}
+        <path
+          d="M 185 18 C 240 5 320 15 380 70 C 445 130 460 220 440 300 C 425 350 380 410 345 425 C 410 390 455 315 450 230 C 445 140 390 60 310 20 C 270 0 225 2 185 18 Z"
+          fill="#ffde00"
+        />
+
+        {/* Center Red Motto Text: PEMANGKIN MASYARAKAT SIHAT */}
+        <g transform="translate(255, 160)">
+          <text
+            x="0"
+            y="0"
+            fill="#d60000"
+            fontSize="28"
+            fontWeight="900"
+            fontFamily="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+            letterSpacing="0.06em"
+            textAnchor="middle"
+          >
+            PEMANGKIN
+          </text>
+          <text
+            x="0"
+            y="38"
+            fill="#d60000"
+            fontSize="25"
+            fontWeight="900"
+            fontFamily="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+            letterSpacing="0.04em"
+            textAnchor="middle"
+          >
+            MASYARAKAT
+          </text>
+          <text
+            x="0"
+            y="76"
+            fill="#d60000"
+            fontSize="28"
+            fontWeight="900"
+            fontFamily="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+            letterSpacing="0.08em"
+            textAnchor="middle"
+          >
+            SIHAT
+          </text>
+        </g>
+
+        {/* Lower Agency Name: Panel Penasihat KLINIK KESIHATAN CHANGKAT JERING */}
+        <g transform="translate(145, 410)">
+          <text
+            x="0"
+            y="38"
+            fill="#1e358b"
+            fontSize="52"
+            fontWeight="800"
+            fontFamily="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+            letterSpacing="-0.02em"
+          >
+            anel
+          </text>
+          <text
+            x="18"
+            y="90"
+            fill="#1e358b"
+            fontSize="52"
+            fontWeight="800"
+            fontFamily="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+            letterSpacing="-0.02em"
+          >
+            enasihat
+          </text>
+          <text
+            x="42"
+            y="130"
+            fill="#1e358b"
+            fontSize="22"
+            fontWeight="700"
+            fontFamily="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+            letterSpacing="0.04em"
+          >
+            KLINIK KESIHATAN
+          </text>
+          <text
+            x="36"
+            y="160"
+            fill="#1e358b"
+            fontSize="22"
+            fontWeight="700"
+            fontFamily="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+            letterSpacing="0.04em"
+          >
+            CHANGKAT JERING
+          </text>
+        </g>
+      </svg>
+    </div>
+  );
+};
